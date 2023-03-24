@@ -1,10 +1,25 @@
 console.log("Hello");
-var subjekt = ["Beethoven", "Biggie", "Mozart", "2pac",];
-var praedikat = ["ruft", "wohnt bei", "hasst", "fürchtet"];
-var objekt = ["PSV Eindhoven", "Dracula", "Schule", "Fallobst"];
-var length = 4;
-for (var index = 0; index < subjekt.length; index++) {
+let subjekt = ["Beethoven", "Biggie", "Mozart", "2pac",];
+let praedikat = ["ruft", "wohnt bei", "hasst", "fürchtet"];
+let objekt = ["PSV Eindhoven", "Dracula", "Schule", "Fallobst"];
+
+
+let index =4
+
+for (let index = 4; index >= 1; index--) {
 }
-function getVerse(_subject, _P, _O) {
-    var Verse = _subject + _P + _O;
+function getVerse(_subjekt, _praedikat, _objekt) {
+    let Verse = _subjekt + _praedikat + _objekt;
+    console.log("Alohomora");
 }
+
+
+
+
+
+
+
+
+
+
+//# sourceMappingURL=main.js.map
