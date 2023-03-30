@@ -1,0 +1,54 @@
+
+h1 {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+div {
+
+    position: relative;
+    display:inline-block;
+    margin:5px;
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    
+   
+}
+
+#div1 {
+
+    background: #000000;
+}
+
+#div2 {
+
+    background: #0000ff;
+}
+
+#button {
+
+    position: absolute;
+    margin: 0;
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#span
+{
+    position: fixed;
+    height: 75px;
+    width: auto;
+    background: #089a17;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 3px;
+}
