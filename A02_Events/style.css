@@ -46,9 +46,7 @@ div {
     position: fixed;
     height: 75px;
     width: auto;
-    background: #089a17;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #000000;
-    border-radius: 3px;
+    background: #ff0000;
+    
+    
 }
