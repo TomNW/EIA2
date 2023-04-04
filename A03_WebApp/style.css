@@ -13,29 +13,38 @@ main {
 
 }
 
+h1 {
+    font-size: 4vw;
+
+}
+
 .inputGroup{
     
     position: relative;
+    
 }
 
 #input-Task, #input-Name, #input-Date, #input-Comment {
     background: white;
-    font-size: 20px;
+    font-size: 2vh;
     padding: 20px 50px;
     border: none;
+    border-radius: 8vh;    
     width: 100%;
     height: 64px;
     box-sizing: border-box;
-    border-bottom: 10px solid rgba(255, 255, 255, 0.829);
+    border-bottom: 10px solid gainsboro;
     outline: none;
 }
 
 #addButton {
 
-background: rgba(255, 255, 255, 0.459);
+background: lightblue;
 font-size: 20px;
 padding: 20px 50px;
+margin-top: 10px;
 border: none;
+border-radius: 50px;
 width: 100%;
 height: 64px;
 }
