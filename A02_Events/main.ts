@@ -6,8 +6,6 @@ Datum: 31.03.2023
 Quellen: w3schools
 */
 
-
-
 window.addEventListener("load", function handleLoad() {
 
 let div1: HTMLDivElement = <HTMLDivElement> document.getElementById("div1");
