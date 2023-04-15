@@ -24,7 +24,7 @@ h1 {
     
 }
 
-#input-Task, #input-Name, #input-Date, #input-Comment {
+#input-Task, #input-Name, #input-Date, #input-Comment, .toDoText {
     background: white;
     font-size: 2vh;
     padding: 20px 50px;
@@ -48,3 +48,4 @@ border-radius: 50px;
 width: 100%;
 height: 64px;
 }
+

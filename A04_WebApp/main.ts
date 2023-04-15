@@ -22,31 +22,16 @@ let name = <HTMLInputElement>document.querySelector("#input-Name");
 let date = <HTMLInputElement>document.querySelector("#input-Date");
 let comment = <HTMLInputElement>document.querySelector("#input-Comment");
 let addButton = <HTMLInputElement>document.querySelector("#addButton");
+let toDoList = <HTMLDivElement>document.querySelector("#toDoList");
 
 console.log(task)
 addButton.addEventListener("click", postTask)
 function postTask (){
-  
-document.getElementById("demo").innerHTML = task.value +"</br>"+ name.value +"</br>"+ date.value +"</br>"+ comment.value;
-
-
+let toDoText = document.createElement("div");
+toDoList.classList.add("toDoText");
+toDoText.innerText = task.value + "</br>" + name.value + "</br>" + date.value + "</br>" + comment.value;
+toDoList.appendChild(toDoText);
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 }
 
