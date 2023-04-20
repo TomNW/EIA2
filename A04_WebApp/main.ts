@@ -26,14 +26,24 @@ let toDoList = <HTMLDivElement>document.querySelector("#toDoList");
 
 console.log(task)
 addButton.addEventListener("click", postTask)
+
+      
+}
+
+
 function postTask (){
 let toDoText = document.createElement("p")
 toDoList.classList.add("toDoText")
 toDoText.innerText = task.value + "</br>" + name.value + "</br>" + date.value + "</br>" + comment.value;
 console.log(task.value + "</br>" + name.value + "</br>" + date.value + "</br>" + comment.value)
 toDoList.appendChild(toDoText)
-      
-}
+
+
+
+
+
+
+
 }
 
 
