@@ -14,64 +14,61 @@ function loadApp() {
 
 let addButton = <HTMLInputElement>document.querySelector("#addButton");
 
-addButton.addEventListener("click", postTask)
+addButton.addEventListener("click", todoElements)
 console.log("Test1")
+}
 
+function todoElements(){
+
+const taskName = <HTMLInputElement>document.querySelector("#input-Task");
+const nameName = <HTMLInputElement>document.querySelector("#input-Name");
+const dateName = <HTMLInputElement>document.querySelector("#input-Date");
+const commentName = <HTMLInputElement>document.querySelector("#input-Comment");
+
+const taskValue = taskName.value;
+const nameValue = nameName.value;
+const dateValue = dateName.value;
+const commentValue = commentName.value;
+
+const newTask: Todo = {
+    Input: [
+        {
+            task: nameValue,
+            name: nameValue,
+            date: dateValue,
+            comment: commentValue,
+        }
+
+    ]
+};
+
+function createTodo(newTask);
+
+taskName.value = "";
+nameName.value = "";
+dateName.value = "";
+commentName.value = "";
+
+
+};
+
+
+
+function createTodo(_data: todo): void {
+
+const todoList = document.getElementById("todoList") as HTMLUListElement;
+
+for (let x: number = 0; x < _data.Input.length; x++) {
+    const newTaskElement = document.createElement("div");
+    newTaskElement.classList.add("newTask")
+
+    newTaskElement.innerHTML = "";
+
+    todoList.appendChild(newTaskElement);
 
 }
 
-
-function postTask (){
-let task = <HTMLInputElement>document.querySelector("#input-Task");
-let name = <HTMLInputElement>document.querySelector("#input-Name");
-let date = <HTMLInputElement>document.querySelector("#input-Date");
-let comment = <HTMLInputElement>document.querySelector("#input-Comment");
-
-let toDoList = <HTMLDivElement>document.querySelector("#toDoList");
-
-let taskText = document.createElement("p")
-taskText.innerText = task.value
-
-let nameText = document.createElement("p")
-nameText.innerText = name.value
-
-let dateText = document.createElement("p")
-dateText.innerText = date.value
-
-let commentText = document.createElement("p")
-commentText.innerText = comment.value
-
-toDoList.appendChild(taskText)
-toDoList.appendChild(nameText)
-toDoList.appendChild(dateText)
-toDoList.appendChild(commentText)
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
