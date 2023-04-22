@@ -1,12 +1,15 @@
+
+namespace A05 {
+
 export interface Item {
     task: string;
-    date: string;
-    time: string;
     name: string;
+    date: string;
     comment: string;
-    status: boolean;
  }
 
  export interface Todo {
     [name: string]: Item[];
  }
+
+}

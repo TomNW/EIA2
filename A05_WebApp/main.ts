@@ -16,6 +16,8 @@ let addButton = <HTMLInputElement>document.querySelector("#addButton");
 
 addButton.addEventListener("click", todoElements)
 console.log("Test1")
+
+
 }
 
 function todoElements(){
@@ -30,7 +32,7 @@ const nameValue = nameName.value;
 const dateValue = dateName.value;
 const commentValue = commentName.value;
 
-const newTask: Todo = {
+const newTask: todo = {
     Input: [
         {
             task: nameValue,
@@ -42,7 +44,7 @@ const newTask: Todo = {
     ]
 };
 
-function createTodo(newTask);
+createTodo(newTask);
 
 taskName.value = "";
 nameName.value = "";

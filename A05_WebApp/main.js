@@ -32,6 +32,7 @@ var A05;
                 }
             ]
         };
+        createTodo(newTask);
         taskName.value = "";
         nameName.value = "";
         dateName.value = "";
