@@ -10,27 +10,42 @@ var A05;
     window.addEventListener("load", loadApp);
     function loadApp() {
         let addButton = document.querySelector("#addButton");
-        addButton.addEventListener("click", postTask);
+        addButton.addEventListener("click", todoElements);
         console.log("Test1");
     }
-    function postTask() {
-        let task = document.querySelector("#input-Task");
-        let name = document.querySelector("#input-Name");
-        let date = document.querySelector("#input-Date");
-        let comment = document.querySelector("#input-Comment");
-        let toDoList = document.querySelector("#toDoList");
-        let taskText = document.createElement("p");
-        taskText.innerText = task.value; //+ "</br>" + name.value + "</br>" + date.value + "</br>" + comment.value;
-        let nameText = document.createElement("p");
-        nameText.innerText = name.value;
-        let dateText = document.createElement("p");
-        dateText.innerText = date.value;
-        let commentText = document.createElement("p");
-        commentText.innerText = comment.value;
-        toDoList.appendChild(taskText);
-        toDoList.appendChild(nameText);
-        toDoList.appendChild(dateText);
-        toDoList.appendChild(commentText);
+    function todoElements() {
+        const taskName = document.querySelector("#input-Task");
+        const nameName = document.querySelector("#input-Name");
+        const dateName = document.querySelector("#input-Date");
+        const commentName = document.querySelector("#input-Comment");
+        const taskValue = taskName.value;
+        const nameValue = nameName.value;
+        const dateValue = dateName.value;
+        const commentValue = commentName.value;
+        const newTask = {
+            Input: [
+                {
+                    task: nameValue,
+                    name: nameValue,
+                    date: dateValue,
+                    comment: commentValue,
+                }
+            ]
+        };
+        taskName.value = "";
+        nameName.value = "";
+        dateName.value = "";
+        commentName.value = "";
+    }
+    ;
+    function createTodo(_data) {
+        const todoList = document.getElementById("todoList");
+        for (let x = 0; x < _data.Input.length; x++) {
+            const newTaskElement = document.createElement("div");
+            newTaskElement.classList.add("newTask");
+            newTaskElement.innerHTML = "";
+            todoList.appendChild(newTaskElement);
+        }
     }
 })(A05 || (A05 = {}));
 //# sourceMappingURL=main.js.map
