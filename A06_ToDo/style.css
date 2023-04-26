@@ -89,6 +89,7 @@ main {
 }
 
 #tasks .task {
+    flex: 1 1 0%;
     display: flex;
     justify-content: space-between;
     background-image: linear-gradient(to right, darkblue, blue);
@@ -113,12 +114,22 @@ main {
     transition: 0.4s;
 }
 
-#tasks .actions button:hover {
+#tasks .delete button:hover {
     opacity: 0.8;
     color: red;
 }
 
-#tasks .actions button:active {
+#tasks .delete button:active {
     opacity: 0.6;
     color: red;
+}
+
+#tasks .edit button:hover {
+    opacity: 0.8;
+    color: yellow;
+}
+
+#tasks .edit button:active {
+    opacity: 0.6;
+    color: yellow;
 }

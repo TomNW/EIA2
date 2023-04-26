@@ -1,3 +1,11 @@
+/*
+Aufgabe: L06
+Name: Tom Wiesmann
+Matrikel: 272715
+Datum: 26.04.2023
+Quellen: EIA 1 ToDoListen Aufgabe, Youtube Tutorial "Build a Todo list app in HTML, CSS & JavaScript in 2021 | JavaScript for Beginners tutorial"
+
+*/
 var ToDo;
 (function (ToDo) {
     window.addEventListener("load", () => {
