@@ -15,7 +15,26 @@ window.addEventListener("load", () =>{
     const inputDate = <HTMLInputElement>document.querySelector("#new-date-input");
     const inputComment = <HTMLInputElement>document.querySelector("#new-comment-input");
     const list_el = document.querySelector("#tasks");
+    
+    
+    
+    function communicate(_url: RequestInfo): void {
+        // try to communicate
+        let promise: Promise<Response> = fetch(_url);
+        // establish the functions to call when communication 1. succeeds, 2. fails
+        promise.then(handleSuccess, handleFailure);
+    }
 
+    function handleFailure(_response: Response): void {
+        console.log("Failure", _response);
+    }
+
+    function handleSuccess(_response: Response): void {
+        console.log("Success", _response);
+    }
+    
+    
+    
     form.addEventListener("submit", (e) => {
         e.preventDefault();
         console.log("submit form");

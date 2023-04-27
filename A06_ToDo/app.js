@@ -15,6 +15,18 @@ var ToDo;
         const inputDate = document.querySelector("#new-date-input");
         const inputComment = document.querySelector("#new-comment-input");
         const list_el = document.querySelector("#tasks");
+        function communicate(_url) {
+            // try to communicate
+            let promise = fetch(_url);
+            // establish the functions to call when communication 1. succeeds, 2. fails
+            promise.then(handleSuccess, handleFailure);
+        }
+        function handleFailure(_response) {
+            console.log("Failure", _response);
+        }
+        function handleSuccess(_response) {
+            console.log("Success", _response);
+        }
         form.addEventListener("submit", (e) => {
             e.preventDefault();
             console.log("submit form");
